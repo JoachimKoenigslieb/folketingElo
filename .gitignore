@@ -1,0 +1,7 @@
+**/__pycache__
+*secret*
+*.swp
+**/venv
+/projects/**
+!.gitkeep
+*.env
