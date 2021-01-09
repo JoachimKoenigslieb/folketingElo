@@ -1,0 +1,54 @@
+body{
+	background: lightgray;
+}
+
+.content {
+	max-width: 500px;
+	margin: auto;
+	background: lightgray;
+	padding: 10px;
+	text-align: center;
+}
+
+img {
+	max-width: 100%;
+}
+
+.footer{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	color: black;
+	background-color: gray;
+	text-align: center;
+}	
+
+h1{
+	text-align: center;
+	display: block;
+}
+
+.container{
+	display: flex;
+	justify-content: center;
+}
+
+.image{
+	width: 45%;
+	padding-top: 25px;
+	padding-bottom: 10px;
+	display: flex;
+	justify-content: center;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+
+form{
+	margin: 0 auto;
+	width: 80%;
+}
+
+textarea{
+	resize: none;
+}
