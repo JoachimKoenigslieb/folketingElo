@@ -27,17 +27,17 @@ function getLeaderboard() {
 			.then(resp => {
 				console.log(resp)
 				listTop = document.getElementsByClassName("topN")[0]
-				listTop.innerHTML = ''
+				listTop.innerHTML = '<h1>Hotteste</h1>'
 
 				for (i=0; i < resp.N; i++){
-					listTop.innerHTML += `<li>${resp.top[i]}</li>`
+					listTop.innerHTML += `<img src="${resp.top[i]}" class="leaderboardImg">`
 				}
 
 				listBot = document.getElementsByClassName('botN')[0]
-				listBot.innerHTML = ''
+				listBot.innerHTML = '<h1>Notteste</h1>'
 
 				for (i=0; i < resp.N; i++){
-					listBot.innerHTML += `<li>${resp.bottom[i]}</li>`
+					listBot.innerHTML += `<img src="${resp.bottom[i]}" class="leaderboardImg">`
 				}
 			})
 

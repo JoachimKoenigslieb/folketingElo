@@ -16,3 +16,5 @@ class Picture(Base):
     
     elo = Column(Integer)
     image_path = Column(String(100), primary_key = True)
+    voted = Column(Integer)
+    
